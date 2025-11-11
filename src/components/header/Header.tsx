@@ -1,10 +1,10 @@
-import { Link } from '@tanstack/react-router'
+import { Link } from '@tanstack/react-router';
 
-import { useState } from 'react'
-import { Home, Menu, X } from 'lucide-react'
+import { useState } from 'react';
+import { Home, Menu, X } from 'lucide-react';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -16,14 +16,9 @@ export default function Header() {
         >
           <Menu size={24} />
         </button>
-        <h1 className="ml-4 text-xl font-semibold">
-          <Link to="/">
-            <img
-              src="/tanstack-word-logo-white.svg"
-              alt="TanStack Logo"
-              className="h-10"
-            />
-          </Link>
+        <h1 className="ml-4 text-2xl font-bold flex items-center gap-2">
+          <img src="/search.svg" alt="GH Seeker" className="h-8" />
+          <span>GH Seeker</span>
         </h1>
       </header>
 
@@ -63,5 +58,5 @@ export default function Header() {
         </nav>
       </aside>
     </>
-  )
+  );
 }

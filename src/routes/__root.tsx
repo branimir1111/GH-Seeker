@@ -1,14 +1,15 @@
-import { Outlet, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanStackDevtools } from '@tanstack/react-devtools'
-
-import Header from '../components/Header'
+import { Outlet, createRootRoute } from '@tanstack/react-router';
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
+import { TanStackDevtools } from '@tanstack/react-devtools';
+import { Toaster } from '@/components/ui/sonner';
+import { Header } from '@/components';
 
 export const Route = createRootRoute({
   component: () => (
     <>
       <Header />
       <Outlet />
+      <Toaster />
       <TanStackDevtools
         config={{
           position: 'bottom-right',
@@ -22,4 +23,4 @@ export const Route = createRootRoute({
       />
     </>
   ),
-})
+});
