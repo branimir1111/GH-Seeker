@@ -7,6 +7,7 @@ import {
   ForkedRepos,
   UsedLanguages,
   PopularRepos,
+  Loading,
 } from '@/components';
 
 type UserProfileProps = {
@@ -18,7 +19,7 @@ const UserProfile = ({ userName }: UserProfileProps) => {
     variables: { login: userName },
   });
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading />;
   if (error) return <h2 className="text-xl">{error.message}</h2>;
   if (!data) return <h2 className="text-xl">User Not Found.</h2>;
 

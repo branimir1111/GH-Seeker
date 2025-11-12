@@ -8,3 +8,4 @@ export { default as StatsContainer } from './user/StatsContainer';
 export { default as ForkedRepos } from './charts/ForkedRepos';
 export { default as UsedLanguages } from './charts/UsedLanguages';
 export { default as PopularRepos } from './charts/PopularRepos';
+export { default as Loading } from './user/Loading';
