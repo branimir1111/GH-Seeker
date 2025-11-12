@@ -31,7 +31,7 @@ const SearchForm = ({ userName, setUserName }: SearchFormProps) => {
   return (
     <form onSubmit={handleSearch} className="w-full mb-8">
       <div className="w-full space-y-2">
-        <Label htmlFor="userName">Username</Label>
+        <Label htmlFor="userName">Enter Username</Label>
         <div className="flex rounded-md shadow-xs">
           <Input
             id="userName"

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { SearchForm, UserProfile } from '@/components';
 
 const HomePage = () => {
-  const [userName, setUserName] = useState('quincylarson');
+  const [userName, setUserName] = useState('yyx990803');
   return (
     <main className="grid place-items-center p-4">
       <div className="w-full max-w-6xl">

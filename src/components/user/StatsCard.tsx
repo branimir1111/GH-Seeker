@@ -1,9 +1,5 @@
 import { Card, CardTitle, CardDescription } from '../ui/card';
 import { ScrollText, UsersRound, UserStar, SquareTerminal } from 'lucide-react';
-import TotalRepositories from '@/assets/TotalRepositories.svg';
-import Followers from '@/assets/Followers.svg';
-import Following from '@/assets/Following.svg';
-import Gists from '@/assets/Gists.svg';
 
 type StatsCardProps = {
   title: string;
@@ -11,15 +7,6 @@ type StatsCardProps = {
 };
 
 const StatsCard = ({ title, count }: StatsCardProps) => {
-  // const statsImage =
-  //   title === 'Total Repositories'
-  //     ? TotalRepositories
-  //     : title === 'Followers'
-  //       ? Followers
-  //       : title === 'Following'
-  //         ? Following
-  //         : Gists;
-
   return (
     <Card className="p-0 shadow-none">
       <div className="flex flex-row justify-between items-center px-4 py-6">
