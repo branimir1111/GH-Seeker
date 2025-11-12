@@ -17,7 +17,7 @@ type UserCardProps = {
 
 const UserCard = ({ avatarUrl, name, bio, url }: UserCardProps) => {
   return (
-    <Card className="w-full py-0 sm:flex-row sm:gap-0">
+    <Card className="w-full py-0 sm:flex-row sm:gap-0 shadow-none">
       <CardContent className="max-sm:grow px-0">
         <img
           src={avatarUrl}

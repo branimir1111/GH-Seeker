@@ -1,6 +1,10 @@
 export { default as Header } from './header/Header';
+export { default as ModeToggle } from './ThemeProvider/mode-toggle';
 export { default as SearchForm } from './searchForm/SearchForm';
 export { default as UserProfile } from './user/UserProfile';
 export { default as UserCard } from './user/UserCard';
 export { default as StatsCard } from './user/StatsCard';
 export { default as StatsContainer } from './user/StatsContainer';
+export { default as ForkedRepos } from './charts/ForkedRepos';
+export { default as UsedLanguages } from './charts/UsedLanguages';
+export { default as PopularRepos } from './charts/PopularRepos';
