@@ -7,8 +7,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <header className="p-4 flex items-center bg-gray-800 text-white shadow-lg">
+    <nav className="grid place-items-center bg-gray-800 text-white shadow-lg p-4">
+      <header className="w-full max-w-6xl flex items-center">
         <button
           onClick={() => setIsOpen(true)}
           className="p-2 hover:bg-gray-700 rounded-lg transition-colors"
@@ -57,6 +57,6 @@ export default function Header() {
           {/* Demo Links End */}
         </nav>
       </aside>
-    </>
+    </nav>
   );
 }
