@@ -27,8 +27,11 @@ const UserCard = ({ avatarUrl, name, bio, url }: UserCardProps) => {
       </CardContent>
       <div className="flex flex-col justify-between sm:min-w-54 sm:grow">
         <CardHeader className="pt-6">
-          <CardTitle>{name}</CardTitle>
-          <CardDescription>{bio}</CardDescription>
+          <CardTitle>{name || 'Branimir Djordjevic'}</CardTitle>
+          <CardDescription>
+            {bio ||
+              'I like exploring JavaScript programming language and its numerous libraries and frameworks.'}
+          </CardDescription>
         </CardHeader>
         <CardFooter className="gap-3 py-6">
           <Button
